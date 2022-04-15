@@ -17,4 +17,7 @@ jobs:
           resource-file-path: deployment.yaml
           resource-name: deployment/phpapp
           show-kubectl-command: true
-workflows: null
+workflows:
+  kubedeploy-workflow:
+    jobs:
+      - create-update
